@@ -1,5 +1,6 @@
 package cafe.siornya;
 
+import cafe.siornya.command.ModCommands;
 import cafe.siornya.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,7 @@ public class AcademyCity implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.initialize();
+		ModCommands.initialize();
 		
 		LOGGER.info("Academy City initialized.");
 	}

@@ -1,5 +1,11 @@
 {
   "item.academy-city.drug_alpha": "Alpha Drug",
   "item.academy-city.drug_beta": "Beta Drug",
-  "item.academy-city.drug_gamma": "Gamma Drug"
+  "item.academy-city.drug_gamma": "Gamma Drug",
+  "command.academy-city.player_only": "This command must be run by a player.",
+  "command.academy-city.dev_progress.get.success": "Your development value is %.2f",
+  "command.academy-city.dev_progress.set.success": "Set your development value to %.2f",
+  "command.academy-city.dev_progress.add.success": "Development progress added. Current value: %.2f",
+  "command.academy-city.level.get.success": "Your level is %d",
+  "command.academy-city.level.set.success": "Set your level to %d"
 }
