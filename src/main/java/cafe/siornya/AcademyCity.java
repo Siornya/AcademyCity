@@ -1,6 +1,7 @@
 package cafe.siornya;
 
 import cafe.siornya.command.ModCommands;
+import cafe.siornya.event.EnergyTickHandler;
 import cafe.siornya.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,7 +19,8 @@ public class AcademyCity implements ModInitializer {
 	public void onInitialize() {
 		ModItems.initialize();
 		ModCommands.initialize();
-		
+		EnergyTickHandler.initialize();
+
 		LOGGER.info("Academy City initialized.");
 	}
 	
