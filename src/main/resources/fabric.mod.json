@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "academy-city",
+	"version": "${version}",
+	"name": "Academy City",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/academy-city/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cafe.siornya.AcademyCity"
+		],
+		"client": [
+			"cafe.siornya.client.AcademyCityClient"
+		],
+		"fabric-datagen": [
+			"cafe.siornya.client.AcademyCityDataGenerator"
+		]
+	},
+	"mixins": [
+		"academy-city.mixins.json",
+		{
+			"config": "academy-city.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
